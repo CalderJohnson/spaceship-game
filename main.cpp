@@ -14,7 +14,7 @@ void detectCollison(asteroid& Asteroid, player& Player)
 	if (Asteroid.getPosition().y >= 1199.8f)
 	{
 		--Player.health;
-		std::cout << "You losedd 1 health. You have " << Player.health << " hp remaining" << std::endl;
+		std::cout << "You lost 1 health. You have " << Player.health << " hp remaining" << std::endl;
 	}
 	if ((Player.getPosition().x + 60 > Asteroid.getPosition().x &&
 		Player.getPosition().x < Asteroid.getPosition().x + 100) &&
